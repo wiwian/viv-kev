@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<title>Java Test</title>
+<link rel=stylesheet type="text/css" href="style.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+   $(document).ready(function () {
+       var rotate = 0;
+       var colors = ["blue", "red", "green"];
+       $('body').on("click", function () {
+
+           $(this).css({
+               'background': colors[rotate]
+           });
+           rotate++;
+           if (rotate >= 3) {
+               rotate = 0;
+           }
+
+       });
+   });
+</script>
+</head>
+
+<body>
+<h1>Testing This Out</h1>
+<button class="color">click to change colour</button>
+
+
+</body>
+</html>

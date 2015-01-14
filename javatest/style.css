@@ -1,0 +1,23 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+/* Typography */
+
+h1 {
+	color: #fe345d;
+	margin: 0;
+}
+
+div {
+	display:block;
+}
+
+#img {
+	height: 800px;
+	background-image: url(images/1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

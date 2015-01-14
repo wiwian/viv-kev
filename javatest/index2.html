@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+<title>Another Test</title>
+<link rel=stylesheet type="text/css" href="style.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+    // $('#img').toggle(
+      
+    //   function () {
+    //     $(this).css("background-image", "url(images/1.jpg)");
+    //   }
+    //   function () {
+    //     $(this).css("background-image", "url(images/2.jpg)");
+    //   function () {
+    //     $(this).css("background-image", "url(images/3.jpg)");
+    //   }
+    //   );
+
+       $(document).ready(function () {
+        var chain = 0; //to iterate through imgs array
+        var imgs = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg"];
+          console.log(imgs.length);
+          $('body').on("click", function(){
+            console.log(chain);
+            $('#img').css('background-image', 'url(' + imgs[chain] + ')');
+            chain++;
+            if (chain >= imgs.length) {
+                 chain = 0;
+             }
+          });
+
+        });
+</script>
+</head>
+
+<body>
+<div id="img">
+<h1>Testing This Out</h1>
+<p>Muhahahaha. I don't know if it works?</p>
+</div>
+
+
+</body>
+</html>
